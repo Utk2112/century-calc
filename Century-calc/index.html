@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Century Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav">
+            <div class="logo">CenturyCalc</div>
+
+            <nav>
+                <a href="#calculator">Calculator</a>
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <main>
+
+        <section class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <p class="tag">Simple • Fast • Accurate</p>
+
+                    <h1>Find the Century<br>of Any Year</h1>
+
+                    <p>
+                        Enter a year and instantly discover which century
+                        it belongs to.
+                    </p>
+
+                    <a href="#calculator" class="hero-btn">
+                        Try Calculator
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Calculator Section -->
+        <section class="calculator-section" id="calculator">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="small-title">CENTURY CALCULATOR</p>
+                    <h2>What century is your year?</h2>
+                    <p>
+                        Enter a year below and let the calculator do the math.
+                    </p>
+                </div>
+
+
+                <div class="calculator-wrapper">
+
+                    <!-- Input Card -->
+                    <div class="card calculator-card">
+
+                        <h3>Enter a Year</h3>
+
+                        <p class="card-text">
+                            Use any positive whole year.
+                        </p>
+
+                        <label for="yearInput">Year</label>
+
+                        <input
+                            type="number"
+                            id="yearInput"
+                            placeholder="Example: 2026"
+                            min="1"
+                        >
+
+                        <button id="calculateBtn">
+                            Calculate Century
+                        </button>
+
+                        <button id="resetBtn" class="reset-btn">
+                            Reset
+                        </button>
+
+                        <p id="errorMessage" class="error-message"></p>
+
+                    </div>
+
+
+                    <!-- Result Card -->
+                    <div class="card result-card" id="resultCard">
+
+                        <span class="result-label">YOUR RESULT</span>
+
+                        <div id="resultNumber" class="result-number">
+                            —
+                        </div>
+
+                        <h3 id="resultText">
+                            Enter a year to see the result
+                        </h3>
+
+                        <p id="resultDescription">
+                            Your century will appear here.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+
+            <div class="container about-content">
+
+                <div>
+                    <p class="small-title">ABOUT THIS TOOL</p>
+
+                    <h2>A quick way to understand centuries.</h2>
+                </div>
+
+                <div>
+                    <p>
+                        CenturyCalc is a small educational tool designed to
+                        make century calculations quick and easy.
+                    </p>
+
+                    <p>
+                        A century contains 100 years. For example, years
+                        1–100 belong to the 1st century, years 101–200
+                        belong to the 2nd century, and years 2001–2100
+                        belong to the 21st century.
+                    </p>
+
+                    <div class="formula-box">
+                        <strong>Formula</strong>
+                        <span>
+                            Century = ⌊(Year − 1) / 100⌋ + 1
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Features Section -->
+        <section class="features-section" id="features">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="small-title">FEATURES</p>
+
+                    <h2>Built to be simple and useful.</h2>
+                </div>
+
+
+                <div class="features-grid">
+
+                    <div class="feature-card">
+                        <div class="feature-icon">01</div>
+
+                        <h3>Instant Results</h3>
+
+                        <p>
+                            Enter a year and get the corresponding century
+                            immediately.
+                        </p>
+                    </div>
+
+
+                    <div class="feature-card">
+                        <div class="feature-icon">02</div>
+
+                        <h3>Accurate Formula</h3>
+
+                        <p>
+                            The calculator uses the standard century
+                            calculation formula.
+                        </p>
+                    </div>
+
+
+                    <div class="feature-card">
+                        <div class="feature-icon">03</div>
+
+                        <h3>Interactive UI</h3>
+
+                        <p>
+                            the  century calculator is responsive and interactive.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <div class="logo">CenturyCalc</div>
+
+                <p>
+                    A simple tool for calculating centuries.
+                </p>
+            </div>
+
+            <p class="copyright">
+                © 2026 CenturyCalc.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
